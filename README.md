@@ -1,49 +1,44 @@
-🤖 SmartBot — Rule-Based Python Chatbot
+🎯 Hangman Game (Python)
 
-A simple, interactive rule-based chatbot built in Python using basic string matching, conditional logic, and standard libraries. SmartBot can handle greetings, small talk, jokes, date/time queries, simple math, and more.
-Perfect for beginners learning about chatbot design and Python control flow.
+A simple command-line Hangman game written in Python.
+The program randomly selects a word from a predefined list, and the player must guess the word one letter at a time before running out of attempts.
 
 📌 Features
 
-SmartBot supports several built-in rule-based behaviors:
+Random word selection
 
-🗨️ Conversation & Small Talk
+Tracks guessed letters
 
-Responds to greetings (hi, hello, hey)
+Displays word progress with underscores
 
-Answers “how are you?”
+Validates user input
 
-Tells its name
+Six allowed incorrect attempts
 
-Reacts to common replies like “fine” or “good”
+Win/lose game ending messages
 
-Thanks and farewells
-
-⏰ Date & Time
-
-Provides current time
-
-Provides today’s date
-
-😂 Jokes
-
-SmartBot selects a random programming-themed joke.
-
-➕ Simple Math
-
-Extracts numbers from user input and performs addition.
 🧠 How It Works
 
-The chatbot uses rule-based logic (a series of if-elif statements) to match specific keywords or phrases.
+The game chooses a random word from the list:
+["python", "computer", "program", "science", "hangman"]
 
-Key techniques used:
+The player guesses letters one at a time.
 
-Case-insensitive input matching
+Correct guesses reveal the letter in the word.
+Incorrect guesses reduce the number of remaining attempts.
 
-Keyword detection using in
+The game ends when:
 
-Random response selection with random.choice()
+The player guesses all letters (🎉 win), or
 
-Getting system date/time via datetime
+The player runs out of attempts (💀 loss)
 
-Basic math using number extraction from the user’s text
+▶ How to Run the Game
+
+Make sure Python is installed
+Version 3.6+ recommended.
+
+Save the script as:
+hangman.py
+
+Open a terminal or command prompt and run:
